@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dharshini S | IT Portfolio</title>
-    
+   
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+   
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+   
     <!-- Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+   
     <!-- Smooth Scroll Animations (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+   
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -56,13 +57,13 @@
         ::-webkit-scrollbar-thumb { background: #7C3AED; border-radius: 10px; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-white font-sans transition-colors duration-500">
 
     <!-- NAVIGATION -->
     <nav class="fixed w-full z-50 top-0 glass border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="#" class="text-2xl font-extrabold font-heading text-primary">DS<span class="text-slate-400">.</span></a>
-            
+           
             <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wide">
                 <a href="#home" class="hover:text-primary transition-all">Home</a>
                 <a href="#about" class="hover:text-primary transition-all">About</a>
@@ -70,8 +71,11 @@
                 <a href="#projects" class="hover:text-primary transition-all">Projects</a>
                 <a href="#contact" class="hover:text-primary transition-all">Contact</a>
             </div>
-            
-            <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-full text-sm font-bold shadow-md hover:shadow-primary/30 transition-all">Hire Me</a>
+           
+            <div class="flex items-center gap-4">
+<button id="theme-toggle" class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center"><i data-lucide="moon" id="theme-icon"></i></button>
+<a href="#contact" class="bg-primary text-white px-5 py-2 rounded-full text-sm font-bold shadow-md hover:shadow-primary/30 transition-all">Hire Me</a>
+</div>
         </div>
     </nav>
 
@@ -87,10 +91,10 @@
                 <h1 class="text-5xl md:text-7xl font-bold font-heading mb-6 leading-tight">DHARSHINI <span class="text-primary">S</span></h1>
                 <div class="flex flex-col gap-2 mb-8">
                     <span class="text-xl md:text-2xl font-medium text-slate-600">Information Technology Student</span>
-                    <span class="text-xl md:text-2xl font-medium text-primary">Frontend Developer</span>
+                    <span class="text-xl md:text-2xl font-medium text-primary">Aspiring Full Stack Developer</span>
                 </div>
                 <p class="text-lg text-slate-500 mb-10 max-w-lg leading-relaxed">
-                    Passionate about building modern, user-centric web applications. I enjoy creating intuitive interfaces and solving real-world problems through code.
+                    Passionate about building responsive and user-friendly web applications. I am an aspiring Full Stack Developer with beginner-level coding knowledge in Java, JavaScript, React, Node.js, Express.js, and MongoDB. I enjoy learning new technologies and solving real-world problems through code.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#projects" class="px-8 py-4 bg-primary text-white rounded-2xl font-bold hover:bg-violet-700 shadow-lg shadow-primary/20 transition-all">View Projects</a>
@@ -110,7 +114,7 @@
                 <h2 class="text-4xl font-bold font-heading">About <span class="text-primary">Me</span></h2>
                 <div class="w-16 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
             </div>
-            
+           
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div data-aos="fade-right">
                     <img src="https://illustrations.popsy.co/violet/web-design.svg" alt="About" class="rounded-3xl shadow-xl">
@@ -120,17 +124,17 @@
                         I am currently pursuing my <strong>B.Tech in Information Technology</strong> at Bannari Amman Institute of Technology (2023–2027).
                     </p>
                     <p class="text-lg text-slate-500">
-                        I specialize in designing interactive web applications and enjoy solving complex programming problems using Java and JavaScript. I am always eager to learn new frameworks and improve my development skills.
+                        I am an aspiring Full Stack Developer with hands-on experience building projects using React, Node.js, Express.js, MongoDB, JavaScript, and Java. As a beginner, I continuously improve my coding skills through projects and programming practice.
                     </p>
-                    
+                   
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
                         <div class="p-4 bg-slate-50 rounded-2xl border-b-4 border-primary">
                             <i data-lucide="layout" class="text-primary mb-2"></i>
-                            <h4 class="font-bold text-sm">Web Development</h4>
+                            <h4 class="font-bold text-sm">Full Stack Development</h4>
                         </div>
                         <div class="p-4 bg-slate-50 rounded-2xl border-b-4 border-primary">
                             <i data-lucide="coffee" class="text-primary mb-2"></i>
-                            <h4 class="font-bold text-sm">Java Expert</h4>
+                            <h4 class="font-bold text-sm">Problem Solver</h4>
                         </div>
                         <div class="p-4 bg-slate-50 rounded-2xl border-b-4 border-primary">
                             <i data-lucide="rocket" class="text-primary mb-2"></i>
@@ -336,7 +340,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-16 bg-darkGray rounded-[3rem] p-10 md:p-16 text-white overflow-hidden relative shadow-2xl shadow-primary/20">
                 <div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
-                
+               
                 <div data-aos="fade-right">
                     <h2 class="text-4xl font-bold font-heading mb-8">Let's <span class="text-primary">Work Together</span></h2>
                     <div class="space-y-6">
@@ -353,7 +357,7 @@
                             <p class="text-lg">+91 9345991035</p>
                         </div>
                     </div>
-                    
+                   
                     <div class="flex gap-4 mt-12">
                         <a href="https://github.com/dharsh2210" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary hover:scale-110 transition-all">
                             <i data-lucide="github"></i>
@@ -384,9 +388,22 @@
     <script>
         // Start Animations
         AOS.init({ duration: 1000, once: true });
-        
+       
         // Start Icons
         lucide.createIcons();
+
+const toggle=document.getElementById('theme-toggle');
+const icon=document.getElementById('theme-icon');
+if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');icon.setAttribute('data-lucide','sun');}
+lucide.createIcons();
+toggle?.addEventListener('click',()=>{
+ document.documentElement.classList.toggle('dark');
+ if(document.documentElement.classList.contains('dark')){
+  localStorage.setItem('theme','dark');icon.setAttribute('data-lucide','sun');
+ }else{localStorage.setItem('theme','light');icon.setAttribute('data-lucide','moon');}
+ lucide.createIcons();
+});
+
     </script>
 </body>
 </html>
